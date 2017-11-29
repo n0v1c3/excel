@@ -8,10 +8,10 @@ Excel tools and workbooks
 
 ```
 Sub Workbook_BeforeSave(ByVal SaveAsUI As Boolean, Cancel As Boolean)
-&nbsp&nbsp&nbsp&nbspApplication.Run ("vbaTools.xlsm!VBABackup")
+Application.Run ("vbaTools.xlsm!VBABackup")
 End Sub
 
 Sub Workbook_Open()
-&nbsp&nbsp&nbsp&nbspApplication.Run ("vbaTools.xlsm!VBARestore")
+Application.Run ("vbaTools.xlsm!VBARestore")
 End Sub
 ```
